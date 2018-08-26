@@ -1,0 +1,89 @@
+# Python working files #
+########################
+*.pyc
+.idea/
+
+# R Working Files #
+###################
+.Rproj.user
+.Rhistory
+.RData
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+# NR: Uncommented because there are library files in Ansible to deploy
+#*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+# NR: Uncommented .zip because there are some large library files in ansible that needed to be zipped
+#*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Big Files #
+#############
+*.xls
+*.xlsx
+*.csv
+
+# Data definitions in DC are excluded
+!data_collector/definitions/**
+
+# Credentials and Whatnot #
+###########################
+*.ppk
+
+# Python notebook related
+# Only ignore untitled notebooks
+Untitled*.ipynb
+.ipynb_checkpoints/
+
+# More stuff
+*.cache
+*.deb
+nohup.out
+
+# Locust test data
+locustfile.records.gz
+locustfile.records
+
+# Ansible retry
+*.retry
+
+# Python egg metadata, regenerated from source files by setuptools.
+*/*.egg-info/**
+*.egg-info/**
+
+# Spark working files
+metastore_db/
+
+# Other random shit
+*.plist

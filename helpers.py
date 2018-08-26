@@ -24,7 +24,8 @@ def no_yes_fixer(df):
             mean_val = np.mean(
                 df.loc[~df[col].isin(['yes', 'no']), col].astype('float'))
             df.loc[df[col] == 'no', col] = 0
-            df.loc[df[col] == 'yes', col] = mean_val
+            # df.loc[df[col] == 'yes', col] = mean_val
+            df.loc[df[col] == 'yes', col] = 1
             df[col] = df[col].astype('float')
     return df
 
